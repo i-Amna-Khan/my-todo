@@ -5,7 +5,7 @@ import "./Todo.css";
 const TodoList = () => {
   const [tasks, setTasks] = useState(()=>{
     const tempData=localStorage.getItem(todoData)
-    if (!todoData)return[]
+    if (!tempData)return[]
     return JSON.parse(tempData) 
   }
   );
